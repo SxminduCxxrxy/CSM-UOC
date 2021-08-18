@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+    <head>
+        <title>CSM - UOC</title>
+        <link rel="icon" href="Logo.png">
+        <link rel="stylesheet" href="Flip.css">
+        <link rel="stylesheet" href="General.css">
+    </head>
+    <body>
+        <div class="nav-down" id="nav">
+            <ul>
+              <li style="border-top: 1px solid #00BFFF;"><a href="javascript:void(0)" id="oneh" onclick="one()" style="background-color: #00BFFF; color:white;">Round 01</a></li>
+              <li><a href="javascript:void(0)" id="twoh" onclick="two()">Round 02</a></li>
+              <li><a href="javascript:void(0)" id="threeh" onclick="three()">Round 03</a></li>
+              <li><a href="javascript:void(0)" id="fourh" onclick="four()">Round 04</a></li>
+              <li><a href="javascript:void(0)" id="fiveh" onclick="five()">Round 05</a></li>
+              <li><a href=" "></a></li>
+              <li><a href=" "></a></li>
+              <li><a href=" "></a></li>
+              <li><a href=" "></a></li>
+              <li><a href=" "></a></li>
+              <li><a href=" "></a></li>
+              <li><a href=" "></a></li>
+              <li><a href=" "></a></li>
+              <li><a href=" "></a></li>
+              <li><a href=" "></a></li>
+              <li style="border-bottom: 1px solid #00BFFF;">&nbsp;</li>
+            </ul>
+        </div>
+        <div class="container">
+
+            <section class="cards" id="one" style="display: block">
+                <div class="cardssingle">
+                    <div class="cardsfront">
+                        <p>Round 01</p>
+                    </div>
+                    <div class="cardsback">
+                        <p>Hello World</p>
+                    </div>
+                </div> 
+            </section>
+          
+            <section class="cards" id="two" style="display: none">
+                <div class="cardssingle">
+                    <div class="cardsfront">
+                        <p>Round 02</p>
+                    </div>
+                    <div class="cardsback">
+                        <p>Hello World</p>
+                    </div>
+                </div> 
+            </section>
+            
+            <section class="cards" id="three" style="display: none">
+                <div class="cardssingle">
+                    <div class="cardsfront">
+                        <p>Round 03</p>
+                    </div>
+                    <div class="cardsback">
+                        <p>Hello World</p>
+                    </div>
+                </div> 
+            </section>
+
+            <section class="cards" id="four" style="display: none">
+                <div class="cardssingle">
+                    <div class="cardsfront">
+                        <p>Round 04</p>
+                    </div>
+                    <div class="cardsback">
+                        <p>Hello World</p>
+                    </div>
+                </div> 
+            </section>
+
+            <section class="cards" id="five" style="display: none">
+                <div class="cardssingle">
+                    <div class="cardsfront">
+                        <p>Round 05</p>
+                    </div>
+                    <div class="cardsback">
+                        <p>Hello World</p>
+                    </div>
+                </div> 
+            </section>
+
+        </div>
+
+        <script>
+            const cards = document.querySelectorAll(".cardssingle");
+
+            function flipCard() {
+                this.classList.toggle("flip");
+            }
+
+            cards.forEach((card) => card.addEventListener("click", flipCard));
+
+            function one() {
+  			document.getElementById("one").style.display = "block";
+  			document.getElementById("oneh").style.cssText="background-color: #00BFFF; color:white;border-bottom: 1px solid #00BFFF;";
+  			document.getElementById("two").style.display = "none";
+  			document.getElementById("twoh").style.cssText="background-color: #f3f3f3; color:#666;";
+  			document.getElementById("three").style.display = "none";
+  			document.getElementById("threeh").style.cssText="background-color: #f3f3f3; color:#666;";
+  			document.getElementById("four").style.display = "none";
+  			document.getElementById("fourh").style.cssText="background-color: #f3f3f3; color:#666;";
+  			document.getElementById("five").style.display = "none";
+  			document.getElementById("fiveh").style.cssText="background-color: #f3f3f3; color:#666;";
+  		}
+		function two() {
+			document.getElementById("nav").className = "li a:hover:not(.active) ";
+  			document.getElementById("one").style.display = "none";
+  			document.getElementById("oneh").style.cssText="background-color: #f3f3f3; color:666;";
+  			document.getElementById("two").style.display = "block";
+  			document.getElementById("twoh").style.cssText="background-color: #00BFFF; color:white;border-bottom: 1px solid #00BFFF;";
+  			document.getElementById("three").style.display = "none";
+  			document.getElementById("threeh").style.cssText="background-color: #f3f3f3; color:#666;";
+  			document.getElementById("four").style.display = "none";
+  			document.getElementById("fourh").style.cssText="background-color: #f3f3f3; color:#666;";
+  			document.getElementById("five").style.display = "none";
+  			document.getElementById("fiveh").style.cssText="background-color: #f3f3f3; color:#666;";
+  		}
+  		function three() {
+  			document.getElementById("one").style.display = "none";
+  			document.getElementById("oneh").style.cssText="background-color: #f3f3f3; color:666;";
+  			document.getElementById("two").style.display = "none";
+  			document.getElementById("twoh").style.cssText="background-color: #f3f3f3; color:#666;";
+  			document.getElementById("three").style.display = "block";
+  			document.getElementById("threeh").style.cssText="background-color: #00BFFF; color:white;border-bottom: 1px solid #00BFFF;";
+  			document.getElementById("four").style.display = "none";
+  			document.getElementById("fourh").style.cssText="background-color: #f3f3f3; color:#666;";
+  			document.getElementById("five").style.display = "none";
+  			document.getElementById("fiveh").style.cssText="background-color: #f3f3f3; color:#666;";
+  		}
+  		function four() {
+  			document.getElementById("one").style.display = "none";
+  			document.getElementById("oneh").style.cssText="background-color: #f3f3f3; color:666;";
+  			document.getElementById("two").style.display = "none";
+  			document.getElementById("twoh").style.cssText="background-color: #f3f3f3; color:#666;";
+  			document.getElementById("three").style.display = "none";
+  			document.getElementById("threeh").style.cssText="background-color: #f3f3f3; color:#666;";
+  			document.getElementById("four").style.display = "block";
+  			document.getElementById("fourh").style.cssText="background-color: #00BFFF; color:white;border-bottom: 1px solid #00BFFF;";
+  			document.getElementById("five").style.display = "none";
+  			document.getElementById("fiveh").style.cssText="background-color: #f3f3f3; color:#666;";
+  		}
+  		function five() {
+  			document.getElementById("one").style.display = "none";
+  			document.getElementById("oneh").style.cssText="background-color: #f3f3f3; color:666;";
+  			document.getElementById("two").style.display = "none";
+  			document.getElementById("twoh").style.cssText="background-color: #f3f3f3; color:#666;";
+  			document.getElementById("three").style.display = "none";
+  			document.getElementById("threeh").style.cssText="background-color: #f3f3f3; color:#666;";
+  			document.getElementById("four").style.display = "none";
+  			document.getElementById("fourh").style.cssText="background-color: #f3f3f3; color:#666;";
+  			document.getElementById("five").style.display = "block";
+  			document.getElementById("fiveh").style.cssText="background-color: #00BFFF; color:white;border-bottom: 1px solid #00BFFF;";
+  		}
+        </script>
+    </body>
+</html>
