@@ -4,8 +4,17 @@
         <link rel="icon" href="Logo.png">
         <link rel="stylesheet" href="Flip.css">
         <link rel="stylesheet" href="General.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat&family=Open+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Aclonica|Alfa+Slab+One|Audiowide|Black+Ops+One|Cookie|Niconne|Euphoria+Script|Galada|Grand+Hotel|Abhaya+Libre|Germania+One|Anton|Dancing+Script" rel="stylesheet">
     </head>
     <body>
+        <div class="header-container" id="sticky">
+            <img src="Logo.png" class="header-image">
+            <p class="header-content">Catholic Student Movement<br>University of Colombo</p>
+        </div>
+        <div class="page-content">
+            <span class="wel">WELCOME !</span>
+        </div>
         <div class="nav-down" id="nav">
             <ul>
               <li style="border-top: 1px solid #00BFFF;"><a href="javascript:void(0)" id="oneh" onclick="one()" style="background-color: #00BFFF; color:white;">Round 01</a></li>
@@ -85,7 +94,28 @@
 
         </div>
 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
         <script>
+
+            window.onscroll = function() {myFunction()};
+
+            var header = document.getElementById("sticky");
+
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.style.opacity= 1;
+                } else {
+                    header.style.opacity= 0;
+                }
+            }
+
             const cards = document.querySelectorAll(".cardssingle");
 
             function flipCard() {

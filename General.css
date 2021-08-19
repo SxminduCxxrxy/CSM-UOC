@@ -1,3 +1,62 @@
+body{
+    margin: 0;
+    background-color: #24292e;
+    background-image: url(star-bg.svg),linear-gradient(#191c20, #24292e 15%);
+    background-repeat: repeat-x;
+    background-position: center 0, 0 0, 0 0;
+}
+
+.header-container{
+    top: 0;
+    width: 95%;
+    height: 10vh;
+    padding: 1% 0% 0% 5%;
+    opacity: 0;
+    background-color: white;
+    position: fixed;
+    transition: all;
+    transition-duration: 300ms;
+    transition-delay: 10ms;
+}
+
+.header-image{
+    width: 3%;
+    float: left;
+}
+
+.header-content{
+    line-height: 1.5;
+    text-align: center;
+    font-family: 'Cormorant', serif;
+    font-size: 18px;
+    font-weight: 900;
+    width: 20%;
+    position: relative;
+    top: -20%;
+    text-shadow: 2px 1px 2px rgb(0 0 0 / 60%);
+}
+
+.page-content{
+    height: 100vh;
+    text-align: center;
+}
+
+.wel{
+    top: 40%;
+    position: relative;
+    font-family: "Germania One", cursive; 
+    font-size: 100px;
+    color: whitesmoke;
+    text-shadow: 2px 1px 2px rgb(1 1 1 / 75%);
+    z-index: -1;
+    opacity: 0;
+    animation-name: welcome;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    /**/
+}
+
 .nav-down{
     top:0;
     width: 100%;
@@ -74,3 +133,8 @@ li a.active {
   ::-webkit-scrollbar-thumb:hover {
     background-color:#00BFFF ; 
   }
+
+@keyframes welcome {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
