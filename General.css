@@ -1,7 +1,7 @@
 body{
     margin: 0;
-    background-color: #24292e;
-    background-image: url(star-bg.svg),linear-gradient(#191c20, #24292e 15%);
+    background-color: #111;
+    background-image: url(Solidarity.svg),linear-gradient(75deg, #9deeff, #93beff 75%);
     background-repeat: repeat-x;
     background-position: center 0, 0 0, 0 0;
 }
@@ -37,7 +37,6 @@ body{
     float: left;
     left: 2%;
     top: -40%;
-    text-shadow: 2px 1px 2px rgb(0 0 0 / 60%);
 }
 
 .vl{
@@ -62,23 +61,90 @@ body{
     height: 100vh;
     text-align: center;
 }
+hr{
+    border: none;
+    width: 10%;
+    height: 1%;
+    background-color: #1D509F;
+}
+
+hr.first{
+    position: relative;
+    left: 48.3%;
+    top: 32%;
+}
+hr.second{
+    position: relative;
+    left: 63%;
+    top: 48%;
+}
+
+.title{
+    top: 15%;
+    position: relative;
+    font-family: "Germania One", cursive;
+    font-size: 100px;
+    float: right;
+    right: 2%;
+    color: #1D509F;
+    font-weight: 900;
+    letter-spacing: 15px;
+    /*animation-name: ;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    letter-spacing: 60px;*/
+}
+
+.sub-title{
+    top: 35%;
+    position: relative;
+    font-family: "Fondamento",cursive;
+    font-size: 25px;
+    float: right;
+    right: -32%;
+    color: #1D509F;
+    font-weight: 600;
+    letter-spacing: 5px;
+    /*animation-name: ;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    letter-spacing: 60px;*/
+}
+
+.des{
+    top: 50%;
+    position: relative;
+    font-family: "Fondamento",cursive;
+    font-size: 17px;
+    float: right;
+    right: -57%;
+    background-color: #9ed16f;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 5px;
+    padding: 1% 2%;
+    border-radius: 30px 0;
+    line-height: 1.2;
+}
 
 .wel{
-    top: 40%;
+    top: 56%;
     position: relative;
-    font-family: "Germania One", cursive; 
-    font-size: 100px;
-    color: whitesmoke;
+    font-family: "Germania One", cursive;
+    font-size: 61px;
+    color: #45258f;
     text-shadow: 2px 1px 2px rgb(1 1 1 / 75%);
     z-index: -1;
     opacity: 0;
     animation-name: welcome;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
-    letter-spacing: 60px;
-
-    /**/
+    letter-spacing: 40px;
+    float: right;
+    left: 35%;
 }
 
 .nav-down{
