@@ -91,11 +91,6 @@ hr.second{
     font-weight: 900;
     letter-spacing: 15px;
     z-index: -1;
-    /*animation-name: ;
-    animation-duration: 5s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    letter-spacing: 60px;*/
 }
 
 .sub-title{
@@ -109,11 +104,6 @@ hr.second{
     font-weight: 600;
     letter-spacing: 5px;
     z-index: -1;
-    /*animation-name: ;
-    animation-duration: 5s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    letter-spacing: 60px;*/
 }
 
 .des{
@@ -199,12 +189,12 @@ li a.active {
 
 .container {
     width: 50%;
-    height: 48.8vh;
+    height: 49.6vh;
     background-color: #00BFFF;
     border: 1px solid #00BFFF;
     border-left: none;
     margin-left: 20%;
-    padding: 6% 12%;
+    padding: 4% 12% 4% 12%;
     text-align: justify;
     font-family: 'Century Gothic', Helvetica, Arial, sans-serif;
     font-size: 18px;
@@ -212,7 +202,6 @@ li a.active {
     color: #000;
     position: relative;
     top: 6vh;
-   
 }
 
 ::-webkit-scrollbar {
