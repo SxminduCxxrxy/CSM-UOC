@@ -53,11 +53,11 @@
 }
 
 .cardsback {
+  width: 31%;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   position: absolute;
   left: 36%;
   top: 3%;
-  width: 31%;
 }
   
