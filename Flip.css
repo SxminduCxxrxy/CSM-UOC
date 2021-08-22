@@ -33,32 +33,31 @@
     border-radius: 20px;
 }
   
-  .cardssingle.flip {
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-  }
-  
-  .cardsfront,
-  .cardsback {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    display: flex;
-    flex-direction: column;
-  }
+.cardssingle.flip {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
 
-  .cardsfront {
-    height: 100%;
-    transform: rotateX(0deg);
-    -webkit-transform: rotateX(0deg);
-  }
-  
-  .cardsback {
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    position: absolute;
-    text-align: center;
-    right: 0;
-    left: 0;
-    top: 30%;
-  }
+.cardsfront,
+.cardsback {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardsfront {
+  height: 100%;
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+}
+
+.cardsback {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  position: absolute;
+  left: 36%;
+  top: 3%;
+  width: 31%;
+}
   
