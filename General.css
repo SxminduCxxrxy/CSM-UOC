@@ -189,12 +189,12 @@ li a.active {
 
 .container {
     width: 50%;
-    height: 49.6vh;
+    height: 496px;
     background-color: #00BFFF;
     border: 1px solid #00BFFF;
     border-left: none;
     margin-left: 20%;
-    padding: 4% 12% 4% 12%;
+    padding: 0% 12%;
     text-align: justify;
     font-family: 'Century Gothic', Helvetica, Arial, sans-serif;
     font-size: 18px;
@@ -202,6 +202,15 @@ li a.active {
     color: #000;
     position: relative;
     top: 6vh;
+}
+
+.footer{
+    font-family: 'Century Gothic', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    background-color: #00bfff;
+    color: white;
+    text-align: center;
+    padding: 1%;
 }
 
 ::-webkit-scrollbar {
